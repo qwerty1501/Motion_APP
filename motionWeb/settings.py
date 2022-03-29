@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     
     # libr
     'rest_framework',
-    'rest_framework_swagger',
     'drf_yasg',
     'ckeditor',
     'corsheaders',
