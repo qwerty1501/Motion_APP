@@ -9,6 +9,7 @@ schema_view = get_swagger_view(title='Pastebin API')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('motionApp.urls')),
+    path('', include('feedback.urls')),
     path(r'ckeditor/', include('ckeditor_uploader.urls')),
 ] 
 

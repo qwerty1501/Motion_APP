@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # APP
     'motionApp.apps.MotionappConfig',
-    
+    'feedback.apps.FeedbackConfig',
     # libr
     'rest_framework',
     'drf_yasg',

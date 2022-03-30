@@ -9,7 +9,7 @@ urlpatterns = [
     path('feedback/', FeedbackCreateListView.as_view()),
     # Delete
     path('order/delete/<int:pk>/', OrderDeleteView.as_view()),
-    path('createstaff/delete/<int:pk>', CreateSteffDeleteView.as_view()),
-    path('jobs/delete/<int:pk>', JobsDeleteView.as_view()),
-    path('feedback/delete/<int:pk>', FeedbackDeleteView.as_view()),
+    path('createstaff/delete/<int:pk>/', CreateSteffDeleteView.as_view()),
+    path('jobs/delete/<int:pk>/', JobsDeleteView.as_view()),
+    path('feedback/delete/<int:pk>/', FeedbackDeleteView.as_view()),
 ]
