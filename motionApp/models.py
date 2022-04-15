@@ -6,7 +6,7 @@ class Order(models.Model):
     image = models.ImageField(verbose_name='Фотография', upload_to ='image/poduct')
     name = models.CharField(verbose_name='Название', max_length=200)
     description = models.TextField(verbose_name='Описание', blank=True, null=True)
-    url_project = models.URLField(verbose_name='Укажите url путь', max_length = 200, blank=True, null=True)
+    upload = models.FileField(verbose_name='Загрузить файл', upload_to ='uploads/file', blank=True, null=True)
     
     def __str__(self):
         return self.name

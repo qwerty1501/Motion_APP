@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -51,6 +52,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     'corsheaders',
     'ckeditor',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -151,5 +154,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# CLOUDINARY_STORAGE
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'your_cloud_name',
+    'API_KEY': 'your_api_key',
+    'API_SECRET': 'your_api_secret'
+}
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
