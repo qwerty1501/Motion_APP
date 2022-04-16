@@ -6,7 +6,7 @@ class FeedbackLink(models.Model):
         verbose_name='Имя',
         max_length=30,
     )
-    question = models.EmailField(
+    mail = models.EmailField(
         verbose_name='Email',
         max_length=100,
         blank=True,

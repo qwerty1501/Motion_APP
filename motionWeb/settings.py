@@ -145,6 +145,15 @@ USE_I18N = True
 USE_TZ = True
 
 
+# MAIL.RU
+
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 465 # 2525
+EMAIL_HOST_USER = 'motion_web@mail.ru'
+EMAIL_HOST_PASSWORD = 'MotionWeb2001'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
